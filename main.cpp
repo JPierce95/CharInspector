@@ -5,20 +5,36 @@ using namespace std;
 
 int main()
 {
-
+  bool type = false;
+  char Char;
+  char lower [] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
+  char upper [] = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W'.'X','Y','Z'};
+  int ascii = Char;
   cout<<"What character do you want to know about?\n";
+  cin Char;
 
-  //when user's entry is between A-Z...
-  cout<<" is an upper case letter!\n";
-
-  //when user's entry is between a-z...
-  cout<<" is a lower case letter!\n";
-
-  //in all other cases...
-  cout<<"?! Pssh. What are you talking about?\n";
+  for(int i = 0; i < 26; i++){
+  if(Char == lower[i]){
+  type = true;}}
   
+  if(type){
+  cout<<Char <<" is an upper case letter!\n";
+  type = false;}
+
+  if(type != true){
+  for(int i = 0; i < 26; i++){
+  if(Char == lower[i]){
+  type = true;}}
+  
+  if(type){
+  cout<<Char <<" is an lower case letter!\n";
+  type = false;}}
+
+  if(type == false){
+	  cout<<"?! Pssh. What are you talking about?\n";
+  }
   //no matter what they enter...
-  cout<<"The ASCII value is: ";
+  cout<<"The ASCII value is: " << ascii;
 
   return 0;
 }
