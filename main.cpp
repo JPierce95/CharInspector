@@ -18,17 +18,15 @@ int main()
   type = true;}}
   
   if(type){
-  cout<<Char <<" is an upper case letter!\n";
-  type = false;}
+  cout<<Char <<" is an lower case letter!\n";}
 
   if(type != true){
   for(int i = 0; i < 26; i++){
-  if(Char == lower[i]){
+  if(Char == upper[i]){
   type = true;}}
   
   if(type){
-  cout<<Char <<" is an lower case letter!\n";
-  type = false;}}
+  cout<<Char <<" is an upper case letter!\n";}}
 
   if(type == false){
 	  cout<<"?! Pssh. What are you talking about?\n";
