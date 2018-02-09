@@ -18,7 +18,7 @@ int main()
   type = true;}}
   
   if(type){
-  cout<<Char <<" is an lower case letter!\n";}
+  cout<<Char <<" is a lower case letter!\n";}
 
   if(type != true){
   for(int i = 0; i < 26; i++){
