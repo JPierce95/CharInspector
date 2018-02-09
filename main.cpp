@@ -29,10 +29,10 @@ int main()
   cout<<Char <<" is an upper case letter!\n";}}
 
   if(type == false){
-	  cout<<"?! Pssh. What are you talking about?\n";
+	  cout<<"$?! Pssh. What are you talking about?\n";
   }
   //no matter what they enter...
-  cout<<"The ASCII value is: " << ascii;
+  cout<<"The ASCII value is: " << ascii << endl;
 
   return 0;
 }
